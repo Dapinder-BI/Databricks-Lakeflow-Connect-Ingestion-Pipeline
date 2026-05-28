@@ -237,19 +237,3 @@ df = spark.read.format("delta") \
 
 ---
 
-## 🗺️ Project Phases
-
-This repo covers **Phase 3** of the full ShopEase project:
-
-| Phase | Description | Status |
-|-------|-------------|--------|
-| 1 | Documentation — 6 industry-standard documents | ✅ Done |
-| 2 | Synthetic data generation + PostgreSQL upload | ✅ Done |
-| **3** | **Bronze layer — Lakeflow Ingestion Pipeline** | ✅ **This repo** |
-| 4 | Silver layer — PySpark data cleaning | 🔲 Next |
-| 5 | EDA + SQL analysis (RFM, Cohort, Churn) | 🔲 Upcoming |
-| 6 | Gold layer — Dimensional model (Star Schema) | 🔲 Upcoming |
-| 7 | Serving layer — Analytical aggregations | 🔲 Upcoming |
-| 8 | Power BI — Semantic model + 4 dashboards | 🔲 Upcoming |
-
-👉 **Main project:** [ecommerce-churn-analysis](https://github.com/Dapinder-BI/ecommerce-churn-analysis)
