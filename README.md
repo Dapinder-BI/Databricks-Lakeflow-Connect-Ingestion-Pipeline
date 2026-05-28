@@ -1,4 +1,4 @@
-# 🔄 Databricks Lakeflow Ingestion Pipeline
+# 🔄 Databricks Lakeflow Connect — Ingestion Pipeline
 
 <div align="center">
 
@@ -8,7 +8,7 @@
 ![Status](https://img.shields.io/badge/Pipeline-Completed%20✓-28a745?style=for-the-badge)
 
 **Incremental data ingestion from a cloud PostgreSQL database into Databricks Bronze layer**
-using the Lakeflow Ingestion Pipeline — no code, no manual watermarks, no complexity.
+using Lakeflow Connect — Databricks' no-code database ingestion feature — no ETL code, no manual watermarks, no complexity.
 
 *Part of the [ShopEase E-Commerce Churn & Retention Analysis](https://github.com/Dapinder-BI/ecommerce-churn-analysis) project*
 
@@ -27,9 +27,13 @@ using the Lakeflow Ingestion Pipeline — no code, no manual watermarks, no comp
 
 ## 💡 Solution
 
-**Databricks Lakeflow Ingestion Pipeline** — a no-code ingestion feature that connects directly
-to a PostgreSQL source, detects new and updated rows automatically, and lands them into
+**Databricks Lakeflow Connect — Ingestion Pipeline** — a no-code ingestion feature that connects
+directly to a PostgreSQL source, detects new and updated rows automatically, and lands them into
 Bronze Delta tables in Unity Catalog.
+
+> Lakeflow Connect is Databricks' connector layer for ingesting data from external databases
+> and SaaS applications. The Ingestion Pipeline is the feature inside it that handles
+> incremental sync, SCD logic, and Streaming Table creation — all without writing a single line of code.
 
 ---
 
@@ -44,7 +48,7 @@ Bronze Delta tables in Unity Catalog.
 │  returns    │  churn_flags           │
 └─────────────────┬────────────────────┘
                   │
-                  │  ⚡ Lakeflow Ingestion Pipeline
+                  │  ⚡ Lakeflow Connect — Ingestion Pipeline
                   │  ├─ Cursor column   →  updated_at
                   │  ├─ Sync mode       →  Incremental
                   │  ├─ Compute         →  Serverless
@@ -230,7 +234,7 @@ df = spark.read.format("delta") \
 |------|------|
 | **Neon PostgreSQL** | Cloud-hosted OLTP source database |
 | **Databricks Free Edition** | Data Lakehouse platform |
-| **Lakeflow Ingestion Pipeline** | No-code incremental ingestion |
+| **Lakeflow Connect — Ingestion Pipeline** | No-code incremental ingestion from external databases |
 | **Delta Lake** | Open table format for Bronze layer |
 | **Unity Catalog** | Data governance and cataloging |
 | **Databricks Serverless** | Auto-scaling compute |
