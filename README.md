@@ -10,7 +10,7 @@
 **Incremental data ingestion from a cloud PostgreSQL database into Databricks Bronze layer**
 using Lakeflow Connect — Databricks' no-code database ingestion feature — no ETL code, no manual watermarks, no complexity.
 
-*Part of the [ShopEase E-Commerce Churn & Retention Analysis](https://github.com/Dapinder-BI/ecommerce-churn-analysis) project*
+*Part of the [ShopEase E-Commerce Churn & Retention Analysis](https://github.com/Dapinder-BI/Ecommerce-Churn-Analysis) project*
 
 </div>
 
