@@ -70,29 +70,18 @@ Bronze Delta tables in Unity Catalog.
 
 ## 📸 Screenshots
 
-<details>
-<summary><b>Pipeline Flow — All tables ingested successfully</b></summary>
-<br>
-
+### Pipeline Flow — All 5 tables ingested successfully
 ![Pipeline Flow](screenshots/pipeline_flow.png)
 
-</details>
+---
 
-<details>
-<summary><b>Row Count Verification — SQL Editor</b></summary>
-<br>
-
+### Row Count Verification — SQL Editor
 ![Row Count Verification](screenshots/row_count_verification.png)
 
-</details>
+---
 
-<details>
-<summary><b>Catalog View — Bronze schema with all 5 tables</b></summary>
-<br>
-
+### Catalog View — Bronze schema with all 5 tables
 ![Catalog View](screenshots/catalog_view.png)
-
-</details>
 
 ---
 
